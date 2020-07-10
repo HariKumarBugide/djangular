@@ -54,7 +54,7 @@ defusedxml==0.6.0
 descartes==1.1.0
 dill==0.2.9
 distributed==2.10.0
-Django==3.0.4
+Django>=3.0.7
 django-extensions==2.2.9
 djangorestframework==3.11.0
 dnspython==1.16.0
