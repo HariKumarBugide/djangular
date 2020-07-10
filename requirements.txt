@@ -22,7 +22,6 @@ backports.weakref==1.0.post1
 beautifulsoup4==4.8.2
 bitarray==1.2.1
 bkcharts==0.2
-bleach==3.1.0
 blis==0.4.1
 bokeh==2.0.1
 boto==2.49.0
@@ -55,7 +54,7 @@ defusedxml==0.6.0
 descartes==1.1.0
 dill==0.2.9
 distributed==2.10.0
-Django==3.0.7
+Django==3.0.4
 django-extensions==2.2.9
 djangorestframework==3.11.0
 dnspython==1.16.0
@@ -173,7 +172,6 @@ py==1.8.1
 pycodestyle==2.5.0
 pycosat==0.6.3
 pycparser==2.20
-pycrypto==2.6.1
 pycurl==7.43.0.5
 pyflakes==2.1.1
 Pygments==2.6.1
