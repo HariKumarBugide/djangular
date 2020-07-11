@@ -80,42 +80,17 @@ WSGI_APPLICATION = 'djangular.wsgi.application'
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 import os
 
-if 'DJANGO_DATABASE_PASSWORD' in os.environ.keys():
-    # Staging or production database
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': os.environ['DJANGO_DATABASE_NAME'],
-            'USER': os.environ['DJANGO_DATABASE_USER'],
-            'PASSWORD': os.environ['DJANGO_DATABASE_PASSWORD'],
-            'HOST': os.environ['DJANGO_DATABASE_SERVER'],
-            'PORT': '5432',
-            'OPTIONS': {
-                'sslmode': 'require',
-            },
-        }
-    }
-    CACHES = {
-        'default': {
-            'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
-            'LOCATION': 'cache_table',
-        }
-    }
-else:
-    # development database
-    DATABASES = {
+DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
-    CACHES = {
+CACHES = {
         'default': {
             'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
         }
     }
-
-
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
 
