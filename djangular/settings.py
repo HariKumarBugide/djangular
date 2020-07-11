@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '&fjvg#2n=2c+-_2n+j26rkkotkpj-8b8vgq=%v%e1!+hbbg6n3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['djangular.azurewebsites.net']
 
 
 # Application definition
