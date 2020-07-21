@@ -25,7 +25,7 @@ SECRET_KEY = '&fjvg#2n=2c+-_2n+j26rkkotkpj-8b8vgq=%v%e1!+hbbg6n3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['djangular.azurewebsites.net','localhost']
+ALLOWED_HOSTS = ['djangular.azurewebsites.net','localhost','djangular-front.azurewebsites.net']
 
 
 # Application definition
